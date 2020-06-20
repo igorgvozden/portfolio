@@ -1,0 +1,33 @@
+.emailForm {
+    padding: 0;
+    background-image: url('../../images/email-us.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.emailForm-inner {
+    padding-top: 2em;
+    background: rgba(0, 0, 0, 0.493);
+    border-radius: 15px;
+    max-width: 700px;
+    min-width: 300px;
+}
+
+h1, h3 {
+    color: white;
+}
+
+input, textarea {
+    color: grey;
+    resize: none;
+}
+
+.posaljiEmailBtn {
+    color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    &:hover {
+        background: rgba(13, 159, 196, 0.712);
+    }
+}

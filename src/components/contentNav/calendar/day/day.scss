@@ -1,0 +1,137 @@
+.hrs-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 10em;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hrs-container__inner {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 1px;
+    // min-height: 500px;
+    padding: 0 1em;
+    background: white;
+    border-radius: 15px;
+}
+
+.hrs-container__inner--big {
+    height: 500px;
+}
+
+.hrs-container__inner--small {
+    height: 249px;
+}
+
+.hrs-container__inner--final {
+    justify-content: center;
+}
+
+.hrs-container__inner--msg {
+    margin: 1px;
+    padding: 1em;
+}
+
+.hrs-container__inner-textarea {
+    margin-bottom: 10px;
+    width: 100%;
+    background: rgb(230, 230, 230);
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.hrs-container__inner-title {
+    flex-basis: 100%;
+    color: rgb(39, 39, 39);
+}
+
+.hrs-container__inner-text {
+    color: rgb(39, 39, 39);
+}
+
+.hrs-container__inner-email {
+    color: rgb(39, 39, 39);
+    margin: 0;
+    text-align: center;
+}
+.hrs-container__inner-text--month {
+    margin-bottom: 0;
+    color: rgb(163, 3, 3);
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.hrs-container__inner-text--day {
+    margin: 0;
+    color: rgb(39, 39, 39);
+    font-size: 100px;
+    line-height: 80px;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.hrs-container__inner-text--hour {
+    color: rgb(39, 39, 39);
+    margin: 0;
+}
+
+.hrs-container__inner-closebtn {
+    position: absolute;
+    right: 15px;
+    color: red;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.hrs-container__inner-schedulebtn {
+    border: none;
+    flex-basis: 100%;
+    margin: 0 auto 10px;
+    line-height: 30px;
+    background: rgb(230, 230, 230);
+    color: black;
+    border-radius: 10px;
+    &:hover {
+        background: rgb(33, 150, 243);
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.hrs-label {
+    position: relative;
+    flex-basis: 100%;
+    color: black;
+    padding: 3px;
+    border-radius: 15px;
+    &:hover {
+        background: rgb(137, 208, 255);
+        color: white;
+    }
+
+    &:checked {
+        color: red;
+    }
+   
+}
+
+.hrs-radio {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+

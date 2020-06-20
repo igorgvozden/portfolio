@@ -1,0 +1,108 @@
+.mainContainer-calendar {
+    min-height: 100vh; 
+    padding: 2em 5em;
+}
+
+.month-container {
+    max-width: 50%;
+    min-width: 750px;
+    margin: 0 auto;
+    background: rgb(230, 230, 230);
+    border-radius: 15px;
+}
+
+.mainContainer-text {
+    text-align: center;
+}
+
+.month-container__choose-month {
+    color: rgb(39, 39, 39);
+}
+
+.month-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4em;
+    border-bottom: 1px solid rgb(44, 44, 44);
+
+    h3 {
+        color: rgb(44, 44, 44);
+        padding: 0 2em;
+        margin: 0;
+    }
+
+    .left-arrow {
+        border-top-left-radius: 15px;
+    }
+
+    .right-arrow {
+        border-top-right-radius: 15px;
+    }
+
+    p {
+        width: 4em;
+        margin: 0;
+        line-height: 4em;
+        text-align: center;
+
+        &:hover {
+            background: rgb(42, 159, 255);
+            color: white;
+        }
+    }
+}
+
+.month-container__week {
+    padding: 0;
+    display: flex;
+
+    li {
+        flex-basis: 14%;
+        text-align: center;
+    }
+}
+
+.days-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.calendarDay, .calendarDay--today {
+    padding: 10px;
+    margin: 1px;
+    height: 5em;
+    border-radius: 15px;
+    flex-basis: 13.7%;
+    background: white;
+    color: black;
+
+    &:hover {
+        background: rgb(42, 159, 255);
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.calendarDay--today {
+    background: rgba(42, 159, 255, 0.541);
+    font-weight: bold;
+}
+
+.calendarDay--empty {
+    padding: 10px;
+    margin: 1px;
+    height: 5em;
+    border-radius: 15px;
+    flex-basis: 13.7%;
+    background: transparent;
+    color: black;
+}
+
+.calendarDay--past {
+    &:hover {
+        background: rgb(243, 243, 243);
+        color: black;
+    }
+}

@@ -1,0 +1,46 @@
+.userNotifications-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.userNotifications-container__inner {
+    position: relative;
+    text-align: center;
+    padding: 5em 3em;
+    background: white;
+    border-radius: 15px;
+    min-height: 300px;
+    min-width: 300px;
+}
+
+.userNotifications-container__inner-text {
+    text-align: center;
+    color: black;
+}
+
+.userNotifications-container__inner-btn {
+    position: absolute;
+    bottom: 1em;
+    left: 3em;
+    right: 3em;
+    display: block;
+    text-align: center;
+    background: rgb(230, 230, 230);
+    padding: 1em;
+    border-radius: 15px;
+    color: black;
+
+    &:hover {
+        background: rgb(33, 150, 243);
+        cursor: pointer;
+        color: white;
+    }
+}

@@ -1,0 +1,15 @@
+nav {
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    padding: 0 25em;
+    display: flex;
+    justify-content: flex-end;
+    min-width: 100%;
+    background-color: rgb(22, 22, 22);
+    color: white;
+}

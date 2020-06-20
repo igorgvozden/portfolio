@@ -1,0 +1,37 @@
+.contentNav {
+    background-color: rgba(17, 17, 17, 0.94);
+    color: white;
+    padding: 5px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+
+    li {
+        margin: 0 15px;
+
+        &:hover {
+            color: rgb(207, 207, 207);
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 5px 15px;
+
+            &:hover {
+                color: rgb(28, 182, 221);
+            }
+        }
+    }
+}
+
+.active {
+    color: rgb(28, 182, 221);
+    border: 1px solid rgb(28, 182, 221);
+    border-radius: 10px;
+}
+

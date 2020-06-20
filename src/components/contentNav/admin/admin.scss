@@ -1,0 +1,92 @@
+.admin-container {
+    min-height: 80vh; 
+    padding: 2em 5em;
+}
+
+.admin-container__users {
+    padding: 1em;
+    margin: 0 auto;
+    background: rgb(230, 230, 230);
+    border-radius: 15px;
+}
+
+.admin-container__users-container {
+    max-height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+
+    &::-webkit-scrollbar {
+        width: 7px;
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 5px;
+      }
+      
+      &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+}
+
+.admin-container__users-title {
+    color: black;
+}
+
+//this is style for DbUser
+
+.db-user {
+    width: 100%;
+    padding: 5px;
+    margin: 1px;
+    background: white;
+    border-radius: 15px;
+    color:rgb(49, 49, 49);
+
+    &:hover {
+        background: rgb(243, 243, 243);
+    }
+}
+
+.db-user--first-row{
+    background: rgb(243, 243, 243);
+}
+
+.db-user__table-th {
+    width: 12%;
+    padding: 5px;
+}
+
+.db-user__table-td {
+    text-align: center;
+    width: 12%;
+    color:rgb(49, 49, 49);
+}
+
+.db-user__table__btn {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+
+    &:hover {
+        background: rgb(42, 159, 255);
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.db-user--appointments {
+    padding-left: 4em;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: left;
+    position: absolute;
+    
+    &:hover {
+        background: rgba(0, 0, 0, 0.9);
+    }
+}
+
+.db-user__table-td--appointments {
+    color: white;
+}
